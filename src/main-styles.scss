@@ -1,0 +1,36 @@
+$turquoise: #44ddd0;
+$green: #27d7a1;
+$light-green: #45f69e;
+$dark-green: rgb(0, 100, 80);
+
+:root {
+  --primary: #fff;
+  --secondary: #000;
+  --secondary-lighter: rgba(0, 0, 0, 0.7);
+}
+
+
+
+// CUSTOM FONTS IMPORTED AND NAMED CUSTOM
+@font-face {
+  font-family: 'Custom';
+  src: url('assets/fonts/sf-ui.otf') format('opentype');
+}
+
+
+
+html,
+body {
+  font-family: 'Custom', Fallback, sans-serif !important;
+  // font-family: 'Lato', sans-serif;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}

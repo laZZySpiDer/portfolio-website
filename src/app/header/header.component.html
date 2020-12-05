@@ -1,0 +1,17 @@
+<nav class="navbar">
+    <span class="navbar-toggle" (click)="onMenuToggleClick()">
+            <i class="fas fa-bars"></i>
+        </span>
+    <a class="logo" (click)="onMenuItemClick('home')">ls.</a>
+    <ul class="main-nav {{ toggleHamActive ? 'active':'' }}">
+      <li>
+        <a class="nav-links" (click)="onMenuItemClick('about')">About</a>
+      </li>
+      <li>
+        <a class="nav-links" (click)="onMenuItemClick('blog')">Blog</a>
+      </li>
+      <li>
+        <a class="nav-links" (click)="onMenuItemClick('portfolio')">Portfolio</a>
+      </li>
+    </ul>
+  </nav>

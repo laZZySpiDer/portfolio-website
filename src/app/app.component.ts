@@ -1,3 +1,4 @@
+import { menu } from './../interface/global-interface';
 import { Component } from '@angular/core';
 
 @Component({
@@ -7,4 +8,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'portfolio';
+  public setActiveComponent:menu = 'home';
+  public getActiveComponent(activeComponent){
+    this.setActiveComponent = activeComponent;
+  }
 }

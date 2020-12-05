@@ -1,0 +1,14 @@
+<ng-container [ngSwitch]="activeComponent">
+    <ng-container *ngSwitchCase="'home'" >
+        <app-home></app-home>
+    </ng-container>
+    <ng-container *ngSwitchCase="'about'">
+        <app-about></app-about>
+    </ng-container>
+    <ng-container *ngSwitchCase="'blog'">
+        <app-blog></app-blog>
+    </ng-container>
+    <ng-container *ngSwitchCase="'portfolio'">
+        <app-portfolio></app-portfolio>
+    </ng-container>
+</ng-container>

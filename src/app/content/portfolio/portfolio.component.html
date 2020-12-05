@@ -1,0 +1,15 @@
+<div class="cards">
+    <div class="card" *ngFor="let singleWork of myPortfolioWork;let i=index">
+        <div class="container">
+            <img src="{{ singleWork.imageUrl }}" alt="las vegas">
+        </div>
+        <div class="details">
+            <h3>{{ singleWork.workTitle }}</h3>
+            <p>{{ singleWork.workShortDesc }}</p>
+            
+            <button class="slide_from_left">Github</button>
+        </div>    
+
+    </div>
+
+</div>

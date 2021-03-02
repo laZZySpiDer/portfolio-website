@@ -1,1 +1,20 @@
-<p>blog works!</p>
+<div class="blog-container">
+    <div class="heading">
+        Blog
+    </div>
+    
+    <div class="blog-list-container">
+        <ul>
+            <li *ngFor="let blog of blogs">
+                <div>
+                    <span class="title">
+                        <a href="{{ blog.link }}">
+                            {{ blog.title }}
+                        </a>
+                    </span>
+                    <span class="author">lazzyspider</span>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>

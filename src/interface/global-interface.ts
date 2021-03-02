@@ -11,3 +11,12 @@ export interface IMyPortfolioWork{
     githubLink?: string,
     liveLink?: string
 }
+
+export interface Blog{
+    id: string,
+    link: string,
+    title: string,
+    author: string,
+    createdAt: Date,
+    description: string
+}

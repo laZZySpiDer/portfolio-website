@@ -1,3 +1,4 @@
+import { PortfolioService } from './../services/portfolio.service';
 import { IMyPortfolioWork } from './../../../interface/global-interface';
 import { Component, OnInit } from '@angular/core';
 
@@ -8,29 +9,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PortfolioComponent implements OnInit {
 
-  public myPortfolioWork: IMyPortfolioWork[] = [
-    {
-      imageUrl : 'https://source.unsplash.com/random',
-      workTitle: 'NEW PROJECT 1',
-      workShortDesc: 'asdpjw osijfo iwj pwfeijf pwei jfwpe fpwmf .',
-      languageStack : ['html','css','javascript']
-    },
-    {
-      imageUrl : 'https://source.unsplash.com/random',
-      workTitle: 'NEW PROJECT 1',
-      workShortDesc: 'asdpjw osijfo iwj pwfeijf pwei jfwpe fpwmf .',
-      languageStack : ['html','css','javascript']
-    },
-    {
-      imageUrl : 'https://source.unsplash.com/random',
-      workTitle: 'NEW PROJECT 1',
-      workShortDesc: 'asdpjw osijfo iwj pwfeijf pwei jfwpe fpwmf .',
-      languageStack : ['html','css','javascript']
-    }
-  ];
-  constructor() { }
+  public myPortfolioWork: IMyPortfolioWork[] = [];
+  constructor(private portfolioService : PortfolioService) { }
 
   ngOnInit() {
+    this.getAllPortfolioData();
+  }
+
+  public getAllPortfolioData(){
+    this.portfolioService.getAllPortfolios().subscribe((response : IMyPortfolioWork[])=> {
+     this.myPortfolioWork = response;
+    });
   }
 
 }

@@ -1,0 +1,39 @@
+.blog-container{
+
+    padding: 1em;
+    padding-left: 7em;
+    .heading{
+        font-size: 2.5em;
+        font-weight: bold;
+    }
+    
+    .blog-list-container{
+        padding: 2em;
+        a{
+            text-decoration: none;
+        }
+        a:hover{
+            text-decoration: underline;
+    
+        }
+    
+        a:visited{
+            color: black;
+        }
+    
+        .title{
+            font-size: 1.25em;
+            color: var(--secondary);
+        }
+        .author{
+            // font-size: 0.8em;
+            font-weight: lighter;
+            color: rgba(113,128,150,0.8);
+            margin-left: 1em;
+            font-weight: 300;
+        }
+    }
+}
+
+
+

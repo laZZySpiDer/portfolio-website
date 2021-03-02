@@ -3,7 +3,7 @@
     <app-header (menuClickEventOutput)="getActiveComponent($event)"></app-header>
   </div>
   <div class="content">
-    <app-content-container [activeComponent]="setActiveComponent"></app-content-container>
+    <router-outlet></router-outlet>
   </div>
   
   <div class="footer">
